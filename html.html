@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7eb81cf08b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="/Webdev/Portfolio_website/IMG_20221001_071755.png" height="68px" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Python Developer</p>
+                <h1>Hello, I'm <span>Praveen</span> <br> Anand from India.</h1>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
+<!-- ----------about-------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="/Webdev/Portfolio_website/IMG_20221001_105358.jpg" width="300" height="380" alt="My photo">
+            </div>
+            <div class="about-col-2">
+                <h2 class = "sub-title">About me</h2><br>
+                <p>I am Praveen Anand, a computer science engineer from Kolkata. I make websites, analyse data and train machine learning models.
+                   I've completed my engineering from Techno India University and worked under TCS as an intern for 6 months, as a junior developer.
+                   I code in python, c++ and R.
+                </p><br>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick = "opentab('skills')">Skills</p>
+                <p class="tab-links" onclick = "opentab('experience')">Experience</p>
+                <p class="tab-links" onclick = "opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <br>
+                <ul>
+                    <li><span>Data Analysis</span><br>Analysing big data</li>
+                    <li><span>Web Development</span><br>Frontend Development</li>
+                    <li><span>Machine Learning</span><br>Training models to get insights from user data</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <br>
+                <ul>
+                    <li>No Experience yet</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <br>
+                <ul>
+                    <li><span>2020 - Current</span><br>Fellow of Techno India University, Kolkata, ECE</li>
+                    <li><span>2018 - 2020</span><br>Himalayan International School, Patna</li>
+                    <li><span>2018</span><br>Completed my 10th grade from NML KPS</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+</div><br><br>
+<!-- ----------------services--------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class = "sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Quickly Build a Website With Our Unified Platform. Grow Your Business With Shopify®. Build Your Own Brand and Sell Online WIth Shopify. Sign Up For An Annual Plan For 10% Off.
+                    Were not just an ecommerce software, Shopify is the best ecommerce platform that ...</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-chart-simple"></i>
+                <h2>Data Analysis</h2>
+                <p>Quickly Build a Website With Our Unified Platform. Grow Your Business With Shopify®. Build Your Own Brand and Sell Online WIth Shopify. Sign Up For An Annual Plan For 10% Off.
+                    Were not just an ecommerce software, Shopify is the best ecommerce platform that ...</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-regular fa-file-image"></i>
+                <h2>Image processing</h2>
+                <p>Quickly Build a Website With Our Unified Platform. Grow Your Business With Shopify®. Build Your Own Brand and Sell Online WIth Shopify. Sign Up For An Annual Plan For 10% Off.
+                    Were not just an ecommerce software, Shopify is the best ecommerce platform that ...</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="/Webdev/Portfolio_website/img7.jpg" alt="">
+                <div class="layer">
+                    <h3>Snake Game</h3>
+                    <p>This is a simple snake game made using Python</p>
+                    <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="/Webdev/Portfolio_website/img7.jpg" alt="">
+                <div class="layer">
+                    <h3>Netflix 2022 data-plot</h3>
+                    <p>This notebook shows proper analysis of user data for Netflix in 2022, with impressive plots!</p>
+                    <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="/Webdev/Portfolio_website/img7.jpg" alt="">
+                <div class="layer">
+                    <h3>PHYMATE</h3>
+                    <p>Check out my e-shopping website.</p>
+                    <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- --------------contact-------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> praveen.anand2212@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 1234567890</p>
+                <div class="social-icons">
+                    <a href="http://www.instagram.com/_praveenclicks_"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="http://www.linkedin.com/in/praveen-anand-5bb0b4210"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="/Webdev/Portfolio_website/MyResume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Made with <i class="fa-sharp fa-solid fa-heart"></i> by CoderFek</p>
+    </div>
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+     var sidemenu = document.getElementById("sidemenu");
+     function openmenu(){
+        sidemenu.style.right = "0";
+     }
+     function closemenu(){
+        sidemenu.style.right = "-200px";
+     }
+</script>
+</body>
+</html>
